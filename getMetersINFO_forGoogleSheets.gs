@@ -50,10 +50,16 @@ function getDevicesList(){
 function getMetersList(){
   const responseJson = getDevicesList()
   const metersList = [];
-  for(i=0; i<responseJson['body']['deviceList'].length; i++){
-    if (responseJson['body']['deviceList'][i]["deviceType"] == "Meter"){
-      metersList.push(responseJson['body']['deviceList'][i].deviceId); 
+
+  try {
+    for(i=0; i<responseJson['body']['deviceList'].length; i++){
+      if (responseJson['body']['deviceList'][i]["deviceType"] == "Meter"){
+        metersList.push(responseJson['body']['deviceList'][i].deviceId); 
+      }
     }
+  } catch(e) {
+    console.log("Error getMetersList: \n",e);
+    console.log("responseJson : ", responseJson);
   }
   //metersList.forEach ((deviceID) => { console.log(deviceID) });
   return metersList;
