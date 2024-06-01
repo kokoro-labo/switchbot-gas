@@ -10,7 +10,7 @@ Google Apps Script (GAS) にてSwitchBotデバイスの情報を取得し、Goog
 
 GASプロジェクトの`プロジェクトの設定`内の`スクリプト プロパティ`にて以下を設定する
 
-| プロパティ | 値 | 
+| プロパティ | 値 |
 | ---- | ---- |
 | SWITCHBOT_TOKEN | SwitchBotのトークン |
 | SWITCHBOT_SECRET | SwitchBotのシークレット |
