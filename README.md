@@ -28,5 +28,5 @@ GASプロジェクトの`プロジェクトの設定`内の`スクリプト プ�
 ### Google Sheetsプロパティの値の取得
 
 * 入力先となる Google Sheets を開く
-* URLを確認し、`https://docs.google.com/spreadsheets/d/spreadsheetId/edit#gid=0`の規則に基づきIDを確認
+* URLを確認し`https://docs.google.com/spreadsheets/d/spreadsheetId/edit#gid=0`の規則に基づきIDを確認
   * 参考：[公式ドキュメント](https://developers.google.com/sheets/api/guides/concepts?hl=ja)
