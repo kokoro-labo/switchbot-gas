@@ -4,6 +4,7 @@ Google Apps Script (GAS) にてSwitchBotデバイスの情報を取得し、Goog
 
 * SwitchBot API v1.1 を利用し、保有する温湿度計のデバイスIDを取得
 * 各室温時計のステータスを取得し、指定の Google Sheets へ入力
+* 各プラグミニのステータスを取得し、指定の Google Sheets へ入力
 
 ## Script Property
 
