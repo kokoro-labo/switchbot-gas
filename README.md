@@ -4,12 +4,13 @@ Google Apps Script (GAS) にてSwitchBotデバイスの情報を取得し、Goog
 
 * SwitchBot API v1.1 を利用し、保有する温湿度計のデバイスIDを取得
 * 各室温時計のステータスを取得し、指定の Google Sheets へ入力
+* 各プラグミニのステータスを取得し、指定の Google Sheets へ入力
 
 ## Script Property
 
 GASプロジェクトの`プロジェクトの設定`内の`スクリプト プロパティ`にて以下を設定する
 
-| プロパティ | 値 | 
+| プロパティ | 値 |
 | ---- | ---- |
 | SWITCHBOT_TOKEN | SwitchBotのトークン |
 | SWITCHBOT_SECRET | SwitchBotのシークレット |
@@ -27,5 +28,5 @@ GASプロジェクトの`プロジェクトの設定`内の`スクリプト プ�
 ### Google Sheetsプロパティの値の取得
 
 * 入力先となる Google Sheets を開く
-* URLを確認し、`https://docs.google.com/spreadsheets/d/spreadsheetId/edit#gid=0`の規則に基づきIDを確認
+* URLを確認し`https://docs.google.com/spreadsheets/d/spreadsheetId/edit#gid=0`の規則に基づきIDを確認
   * 参考：[公式ドキュメント](https://developers.google.com/sheets/api/guides/concepts?hl=ja)
