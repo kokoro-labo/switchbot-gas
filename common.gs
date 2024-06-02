@@ -6,6 +6,8 @@ const baseURL = "https://api.switch-bot.com/v1.1/";
 // GoogleSheet
 const sheetId = PropertiesService.getScriptProperties().getProperty("GOOGLE_SHEETS_ID");
 const sheetName = PropertiesService.getScriptProperties().getProperty("GOOGLE_SHEETS_NAME");
+const sheetMeter = sheetName.concat("_Meter");
+const sheetPlugMini = sheetName.concat("_PlugMini");
 
 // headersの生成
 function getHeaders() {
@@ -44,4 +46,10 @@ function getDevicesList(){
     console.log("Error: \n",e)
     return;
   }
+}
+
+// GoogleSheetへ入力
+function getINFO(){
+  getMeterINFO();
+  getPlugMiniINFO()
 }
