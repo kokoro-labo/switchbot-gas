@@ -27,9 +27,19 @@ function getPlugMiniINFO(){
     //console.log("getPlugMiniINFO.responseJson \n", responseJson)
     //シート取得
     const spreadsheet = SpreadsheetApp.openById(sheetId); 
-    const sheet = spreadsheet.getSheetByName(sheetName);
+    const sheet = spreadsheet.getSheetByName(sheetPlugMini);
     const date = new Date();
     //データ入力
-    sheet.appendRow([deviceID,date,responseJson['body']['power'],responseJson['body']['voltage'],responseJson['body']['weight'],responseJson['body']['electricityOfDay'],responseJson['body']['electricCurrent'],responseJson['body']['version']]);
+    sheet.appendRow([
+      date,
+      deviceID,
+      responseJson['body']['hubDeviceId'],
+      responseJson['body']['power'],
+      responseJson['body']['voltage'],
+      responseJson['body']['weight'],
+      responseJson['body']['electricityOfDay'],
+      responseJson['body']['electricCurrent'],
+      responseJson['body']['version']
+      ]);
   });
 }
